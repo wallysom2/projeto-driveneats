@@ -1,0 +1,130 @@
+/* Títulos da página */
+body{
+    width: 100vw;
+    max-width: 500px;
+    margin: auto;
+    background-color: #333333;
+}
+
+header{
+    height: 92px;
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    position: fixed;
+    width: 100vw;
+    max-width: 500px;
+
+
+}
+header h1{
+    font-size: 44px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Righteous;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-left: 21px;
+}
+header h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 21px;
+}
+main{
+    width: 100vw;
+    max-width: 500px;
+    padding-top: 92px;
+    padding-bottom: 108px;
+    background-color: #E5E5E5;
+} 
+section{
+    display: flex;
+    overflow-x: scroll;
+
+}
+.titulo-categ{
+    font-family: Righteous;
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    padding-left: 19px;
+    padding-top: 31px;
+}
+[data-identifier="food-option"]{
+    width: 172px;
+    height: 202px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-top: 17px;
+    margin-left: 19px;
+
+}
+[data-identifier="food-option"] img{
+    height: 87px;
+    width: 144px;
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+[data-identifier="food-title"]{
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.food-descricao{
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+[data-identifier="food-price"]{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+footer {
+    height: 92px;
+    background-color:#FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 500px;
+
+}
+
+.botao {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.botao p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
