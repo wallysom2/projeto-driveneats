@@ -15,7 +15,20 @@
     <title>Driveneats</title>
 </head>
 <body>
-
+    <div class="conf-pedido esconder">
+        <p class="titulo-confirmacao">Confirmar Pedido</p>
+        <div class="itens-confirmacao">
+            <p class="comida-conf"> <span class ="prato-conf">Prato</span><span class="preco-prato-conf">18,90</span></p> 
+            <p class="comida-conf"><span class="bebida-conf">Bebida</span><span class="preco-bebida-conf">12,90</span></p>
+            <p class="comida-conf"><span class="doce-conf">Doce</span><span class="preco-doce-conf">12.33</span></p>
+            <p class="total-conf"><span>TOTAL</span><span class="preco-total-conf">R$ 44,00</span></p>
+        </div>
+        <div class="podePedir">
+        <div class="text-botao-conf" onclick="whatsapp()" >Tudo certo, pode pedir!</div>
+        </div>
+        <p class="cancelar-conf" onclick="cancelarConf()">Cancelar</p>
+    </div>
+    
     <!--Títulos da página-->
 
     <header>
@@ -32,25 +45,25 @@
         <article>
             <p class="titulo-categ"> Primeiro, seu prato</p>
             <section data-identifier="dishes">
-                <div data-identifier="food-option" class="prato1" onclick="selecionarPrato('prato1','Hamburgue', 24.90)">
-                    <img src="imgs/siri.jpg" alt="prato de comida">
-                    <p data-identifier="food-title">Hamburgue de Siri</p>
+                <div data-identifier="food-option" class="prato1" onclick="selecionarPrato('prato1','Hamburguer', 24.99)">
+                    <img src="imgs/hamburguer.jpg" alt="prato de comida">
+                    <p data-identifier="food-title">Hamburguer</p>
                     <p class="food-descricao">Secreto</p>
-                    <p data-identifier="food-price">R$ 24,90</p>
+                    <p data-identifier="food-price">R$ 24,99</p>
                     <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
-                <div data-identifier="food-option" class="prato2" onclick="selecionarPrato('prato2', 'Macarrao', 64.90)">
-                    <img src="imgs/lamen.jpg" alt="prato de comida">
-                    <p data-identifier="food-title">Ramen</p>
+                <div data-identifier="food-option" class="prato2" onclick="selecionarPrato('prato2', 'Macarrão', 64.99)">
+                    <img src="imgs/macarrao.jpg" alt="prato de comida">
+                    <p data-identifier="food-title">Macarrão</p>
                     <p class="food-descricao">Ichiraku</p>
-                    <p data-identifier="food-price">R$ 64,90</p>
+                    <p data-identifier="food-price">R$ 64,99</p>
                     <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
-                <div data-identifier="food-option" class="prato3" onclick="selecionarPrato('prato3', 'Salada', 14.90)">
-                    <img src="imgs/spina.png" alt="prato de comida">
-                    <p data-identifier="food-title">Espinafre</p>
-                    <p class="food-descricao">lata</p>
-                    <p data-identifier="food-price">R$ 14,90</p>
+                <div data-identifier="food-option" class="prato3" onclick="selecionarPrato('prato3', 'Salada', 14.99)">
+                    <img src="imgs/salada.jpg" alt="prato de comida">
+                    <p data-identifier="food-title">Salada</p>
+                    <p class="food-descricao">Tigela</p>
+                    <p data-identifier="food-price">R$ 14,99</p>
                     <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
             </section>
@@ -61,23 +74,23 @@
         <article>
             <p class="titulo-categ">Agora, sua bebida</p>
             <section data-identifier="drinks">
-                <div data-identifier="food-option"  class="bebida1" onclick="selecionarBebida('bebida1','refrigerante',4.90)">
-                    <img src="imgs/pocao-polissuco.jpg" alt="lata de coca">
+                <div data-identifier="food-option"  class="bebida1" onclick="selecionarBebida('bebida1','Refrigerante',4.99)">
+                    <img src="imgs/refrigerante.jpg" alt="lata de coca">
                     <p data-identifier="food-title">Refrigerante</p>
-                    <p class="food-descricao">Frasco 30ml</p>
-                    <p data-identifier="food-price">R$ 4,90</p>
+                    <p class="food-descricao">Copo</p>
+                    <p data-identifier="food-price">R$ 4,99</p>
                 </div>
-                <div data-identifier="food-option" class="bebida2" onclick="selecionarBebida('bebida2', 'suco', 7.90)">
-                    <img src="imgs/felix.jpg" alt="lata de coca">
+                <div data-identifier="food-option" class="bebida2" onclick="selecionarBebida('bebida2', 'Suco', 7.99)">
+                    <img src="imgs/suco.jpg" alt="lata de coca">
                     <p data-identifier="food-title">Suco</p>
-                    <p class="food-descricao">Frasco 70ml</p>
-                    <p data-identifier="food-price">R$ 7,90</p>
+                    <p class="food-descricao">Taça</p>
+                    <p data-identifier="food-price">R$ 7,99</p>
                 </div>
-                <div data-identifier="food-option" class="bebida3" onclick="selecionarBebida('bebida3', 'cha', 9.90)">
-                    <img src="imgs/pocao-do-amor.jpg" alt="lata de coca">
+                <div data-identifier="food-option" class="bebida3" onclick="selecionarBebida('bebida3', 'Chá', 9.99)">
+                    <img src="imgs/cha.jpg" alt="lata de coca">
                     <p data-identifier="food-title">Chá</p>
-                    <p class="food-descricao">Frasco 50ml</p>
-                    <p data-identifier="food-price">R$ 9,90</p>
+                    <p class="food-descricao">Xícara</p>
+                    <p data-identifier="food-price">R$ 9,99</p>
                 </div>
 
             </section>
@@ -88,30 +101,30 @@
         <article>
             <p class="titulo-categ">Por fim, sua sobremesa</p>
             <section data-identifier="desserts">
-                <div data-identifier="food-option" class="doce1" onclick="selecionarDoce('doce1', 'sorvete', 10)">
-                    <img src="imgs/sobremesa.png" alt="Pudim">
+                <div data-identifier="food-option" class="doce1" onclick="selecionarDoce('doce1', 'Sorvete', 10.88)">
+                    <img src="imgs/sorvete.jpg" alt="Pudim">
                     <p data-identifier="food-title">Sorvete</p>
-                    <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 12,80</p>
+                    <p class="food-descricao">Casquinha</p>
+                    <p data-identifier="food-price">R$ 12,88</p>
                 </div>
-                <div data-identifier="food-option" class="doce2" onclick="selecionarDoce('doce2', 'Chocolate', 7)">
-                    <img src="imgs/sobremesa.png" alt="Pudim">
+                <div data-identifier="food-option" class="doce2" onclick="selecionarDoce('doce2', 'Chocolate', 7.65)">
+                    <img src="imgs/choco.jpg" alt="Pudim">
                     <p data-identifier="food-title">Chocolate</p>
-                    <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 13,40</p>
+                    <p class="food-descricao">Tigela</p>
+                    <p data-identifier="food-price">R$ 7,65</p>
                 </div>
-                <div data-identifier="food-option" class="doce3" onclick="selecionarDoce('doce3', 'Pudim', 11.90)">
-                    <img src="imgs/sobremesa.png" alt="Pudim">
+                <div data-identifier="food-option" class="doce3" onclick="selecionarDoce('doce3', 'Pudim', 11.98)">
+                    <img src="imgs/pud.jpg" alt="Pudim">
                     <p data-identifier="food-title">Pudim</p>
-                    <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 7,60</p>
+                    <p class="food-descricao">Fatia</p>
+                    <p data-identifier="food-price">R$ 11,98</p>
                 </div>
             </section>
         </article>
 
         <!--Botao de confirmacao-->
     <footer>
-        <div class="botao finalizar-pedido" >
+        <div class="botao finalizar-pedido" onclick="fazerPedidoClique()">
             <p class="text-final">Selecione os 3 itens</p>
             <p class="text-final">para fechar o pedido</p>
         </div>
