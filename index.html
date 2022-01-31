@@ -32,23 +32,26 @@
         <article>
             <p class="titulo-categ"> Primeiro, seu prato</p>
             <section data-identifier="dishes">
-                <div data-identifier="food-option" id="caixa11" onclick="select11()">
+                <div data-identifier="food-option" class="prato1" onclick="selecionarPrato('prato1','Hamburgue', 24.90)">
                     <img src="imgs/siri.jpg" alt="prato de comida">
-                    <p data-identifier="food-title">Hamburg de Siri</p>
+                    <p data-identifier="food-title">Hamburgue de Siri</p>
                     <p class="food-descricao">Secreto</p>
                     <p data-identifier="food-price">R$ 24,90</p>
+                    <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
-                <div data-identifier="food-option" id="caixa12" onclick="select12()">
+                <div data-identifier="food-option" class="prato2" onclick="selecionarPrato('prato2', 'Macarrao', 64.90)">
                     <img src="imgs/lamen.jpg" alt="prato de comida">
                     <p data-identifier="food-title">Ramen</p>
                     <p class="food-descricao">Ichiraku</p>
                     <p data-identifier="food-price">R$ 64,90</p>
+                    <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
-                <div data-identifier="food-option" id="caixa13" onclick="select13()">
+                <div data-identifier="food-option" class="prato3" onclick="selecionarPrato('prato3', 'Salada', 14.90)">
                     <img src="imgs/spina.png" alt="prato de comida">
                     <p data-identifier="food-title">Espinafre</p>
                     <p class="food-descricao">lata</p>
                     <p data-identifier="food-price">R$ 14,90</p>
+                    <ion-icon class="esconder" name="checkmark-circle"></ion-icon>
                 </div>
             </section>
         </article>
@@ -58,23 +61,23 @@
         <article>
             <p class="titulo-categ">Agora, sua bebida</p>
             <section data-identifier="drinks">
-                <div data-identifier="food-option"  id="caixa21" onclick="select21()">
+                <div data-identifier="food-option"  class="bebida1" onclick="selecionarBebida('bebida1','refrigerante',4.90)">
                     <img src="imgs/pocao-polissuco.jpg" alt="lata de coca">
-                    <p data-identifier="food-title">Polissuco</p>
+                    <p data-identifier="food-title">Refrigerante</p>
                     <p class="food-descricao">Frasco 30ml</p>
-                    <p data-identifier="food-price">R$ 54,90</p>
+                    <p data-identifier="food-price">R$ 4,90</p>
                 </div>
-                <div data-identifier="food-option" id="caixa22" onclick="select22()">
+                <div data-identifier="food-option" class="bebida2" onclick="selecionarBebida('bebida2', 'suco', 7.90)">
                     <img src="imgs/felix.jpg" alt="lata de coca">
-                    <p data-identifier="food-title">Veritaserum</p>
+                    <p data-identifier="food-title">Suco</p>
                     <p class="food-descricao">Frasco 70ml</p>
-                    <p data-identifier="food-price">R$ 98,90</p>
+                    <p data-identifier="food-price">R$ 7,90</p>
                 </div>
-                <div data-identifier="food-option" id="caixa23" onclick="select23()">
+                <div data-identifier="food-option" class="bebida3" onclick="selecionarBebida('bebida3', 'cha', 9.90)">
                     <img src="imgs/pocao-do-amor.jpg" alt="lata de coca">
-                    <p data-identifier="food-title">Amortentia</p>
+                    <p data-identifier="food-title">Chá</p>
                     <p class="food-descricao">Frasco 50ml</p>
-                    <p data-identifier="food-price">R$ 33,90</p>
+                    <p data-identifier="food-price">R$ 9,90</p>
                 </div>
 
             </section>
@@ -85,39 +88,39 @@
         <article>
             <p class="titulo-categ">Por fim, sua sobremesa</p>
             <section data-identifier="desserts">
-                <div data-identifier="food-option" id="caixa31" onclick="select31()">
+                <div data-identifier="food-option" class="doce1" onclick="selecionarDoce('doce1', 'sorvete', 10)">
                     <img src="imgs/sobremesa.png" alt="Pudim">
-                    <p data-identifier="food-title">Pudim</p>
+                    <p data-identifier="food-title">Sorvete</p>
                     <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 7,90</p>
+                    <p data-identifier="food-price">R$ 12,80</p>
                 </div>
-                <div data-identifier="food-option" id="caixa32" onclick="select32()">
+                <div data-identifier="food-option" class="doce2" onclick="selecionarDoce('doce2', 'Chocolate', 7)">
                     <img src="imgs/sobremesa.png" alt="Pudim">
-                    <p data-identifier="food-title">Pudim</p>
+                    <p data-identifier="food-title">Chocolate</p>
                     <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 7,90</p>
+                    <p data-identifier="food-price">R$ 13,40</p>
                 </div>
-                <div data-identifier="food-option" id="caixa33" onclick="select33()">
+                <div data-identifier="food-option" class="doce3" onclick="selecionarDoce('doce3', 'Pudim', 11.90)">
                     <img src="imgs/sobremesa.png" alt="Pudim">
                     <p data-identifier="food-title">Pudim</p>
                     <p class="food-descricao">Apenas pudim</p>
-                    <p data-identifier="food-price">R$ 7,90</p>
+                    <p data-identifier="food-price">R$ 7,60</p>
                 </div>
             </section>
         </article>
 
         <!--Botao de confirmacao-->
     <footer>
-        <div class="botao">
-            <p>Selecione os 3 itens</p>
-            <p>para fechar o pedido</p>
+        <div class="botao finalizar-pedido" >
+            <p class="text-final">Selecione os 3 itens</p>
+            <p class="text-final">para fechar o pedido</p>
         </div>
     </footer>  
     
     </main>
-
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="script.js"></script>
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
 
 </body>
 </html>
